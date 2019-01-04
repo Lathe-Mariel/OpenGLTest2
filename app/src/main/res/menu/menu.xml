@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menuitem_drag_pan"
+        android:title="@string/pan"
+        android:icon="@drawable/icon4way"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menuitem_drag_rotate"
+        android:title="@string/rotate"
+        android:icon="@drawable/icon3d"
+        app:showAsAction="ifRoom"/>
 
     <item android:title="@string/drag_mode">
         <menu>
@@ -8,12 +20,7 @@
                 <item
                     android:id="@+id/menuitem_drag_none"
                     android:title="@string/none"/>
-                <item
-                    android:id="@+id/menuitem_drag_rotate"
-                    android:title="@string/rotate"/>
-                <item
-                    android:id="@+id/menuitem_drag_pan"
-                    android:title="@string/pan"/>
+
                 <item
                     android:id="@+id/menuitem_drag_zoom"
                     android:title="@string/zoom"/>
